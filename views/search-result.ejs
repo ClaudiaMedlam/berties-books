@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Search <%=shopName%></h1>
+    <h2>The following books match your search:</h2>
+    
+    <ul> 
+        <!-- Inputs books data from search and database-->
+        <% for(let i = 0; i < foundBooks.length; i++) {%>
+            <li><%= foundBooks[i].name%>, £<%=foundBooks[i].price%>
+            </li>
+        <% } %>
+    </ul>
+    
+  </body>
+</html>

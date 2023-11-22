@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1><%=shopName%>: Bargain Books</h1>
+    <h2>Here are the books that we sell that cost less than £20:</h2>
+
+    <ul> 
+        <!-- Inputs books data from database -->
+        <% for(let i = 0; i < cheapBooks.length; i++) {%>
+            <li><%= cheapBooks[i].name%>, £<%=cheapBooks[i].price%>
+            </li>
+        <% } %>
+    </ul>
+    
+  </body>
+</html>

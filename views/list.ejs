@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1><%=shopName%>: Book List</h1>
+    <h2>Here are the books that we sell:</h2>
+    
+    <ul> 
+        <!-- Inputs books data from database -->
+        <% for(let i = 0; i < availableBooks.length; i++) {%>
+            <li><%= availableBooks[i].name%>, £<%=availableBooks[i].price%>
+            </li>
+        <% } %>
+    </ul>
+  </body>
+</html>

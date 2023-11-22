@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Adding Books To <%=shopName%></h1>
+    <h2>You can add books here:</h2>
+
+    <!-- POST form to add books to the database -->
+    <form method="POST" action="/bookadded">
+        <p>Book name: <input id="name" type="text" name="name" value="book name" /></p>
+        <p>Price: <input id="price" type="text" name="price" value="price" /></p>
+        <input type="submit" value="Submit" />
+      </form>
+  </body>
+</html>
